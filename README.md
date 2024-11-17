@@ -91,9 +91,7 @@ Utility functions for encoding and decoding:
 - **fromBase64**: Decodes the Base64 encoded text back to the original format.
 
 ## Future Enhancements
-- Add more encoding algorithms (e.g., MD5, Hex encoding).
-- Improve UI/UX with better design and features.
-- Add unit tests for utility functions.
+- Add About Us, And Improve the UI 
 
 ## License
 
