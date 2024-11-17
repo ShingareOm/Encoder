@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Encoder Using Reactjs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple ReactJS project that allows users to encode and decode text using various encoding formats, including **Uppercase**, **Lowercase**, **SHA256**, and **Base64**. The application also demonstrates the use of React hooks (`useState`) and basic event handling.
 
-## Available Scripts
+## Features
+- **Text Encoding Options**: 
+  - Uppercase
+  - Lowercase
+  - SHA256
+  - Base64 encoding and decoding
+- **Responsive UI** built with **Bootstrap**
+- **State Management** with React's `useState` hook
+- **Event Handling** in ReactJS
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+This project demonstrates how to handle state in React using the `useState` hook and how to manage user input with event handling. The application allows users to input text, select an encoding option, and see the encoded or decoded result in real time.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+- **ReactJS**: JavaScript library for building user interfaces.
+- **Bootstrap**: CSS framework for building responsive, mobile-first websites.
+- **CryptoJS**: A JavaScript library for cryptographic algorithms (used for SHA256 encoding).
+- **Base64 Encoding/Decoding**: Used for encoding/decoding data in Base64 format.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+You can try out the live demo of the project [here](#).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get started with this project locally, follow these instructions:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ensure you have the following installed on your machine:
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository to your local machine:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/ShingareOm/Encoder.git
+   cd Encoder
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install the required dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Start the development server:
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   This will start the application and open it in your default browser at `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+1. Open the application in your browser.
+2. Type the text you want to encode or decode in the input box.
+3. Choose one of the encoding options:
+   - **Uppercase**: Converts the text to uppercase letters.
+   - **Lowercase**: Converts the text to lowercase letters.
+   - **SHA256**: Applies SHA256 hashing to the text.
+   - **Base64 Encode**: Encodes the text into Base64 format.
+   - **Base64 Decode**: Decodes the Base64 encoded text.
+4. The result will be displayed below the input field.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Code Overview
 
-### Analyzing the Bundle Size
+### `App.js`
+The main component of the application. It contains:
+- **State management** using `useState` to store the input text and the result.
+- **Event handling** for the buttons that trigger encoding/decoding.
+- Conditional rendering to display results based on the selected encoding method.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### `TextForms.js`
+Utility functions for encoding and decoding:
+- **toUppercase**: Converts the input text to uppercase.
+- **toLowercase**: Converts the input text to lowercase.
+- **toSHA256**: Hashes the input text using the SHA256 algorithm (via CryptoJS).
+- **toBase64**: Encodes the input text to Base64.
+- **fromBase64**: Decodes the Base64 encoded text back to the original format.
 
-### Making a Progressive Web App
+## Future Enhancements
+- Add more encoding algorithms (e.g., MD5, Hex encoding).
+- Improve UI/UX with better design and features.
+- Add unit tests for utility functions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
