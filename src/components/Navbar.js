@@ -27,7 +27,7 @@ function NavScrollExample({ title = 'Encoder Hu Mai', aboutName }) {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="primary">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
