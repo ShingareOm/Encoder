@@ -38,19 +38,19 @@ function TextControlsExample(props) {
                     value={text}
                     onChange={updateText}
                 />
-                <Button variant="primary" onClick={updateToUpperCase} className="mx-2">
+                <Button variant="primary" onClick={updateToUpperCase} className="mx-2 my-2">
                     Convert To Uppper Case
                 </Button>
-                <Button variant="primary" onClick={updateToLowerCase} className="my-2">
+                <Button variant="primary" onClick={updateToLowerCase} className="my-2 my-2">
                     Convert To Lower Case
                 </Button>
-                <Button variant="primary" onClick={encodeToBase64} className="mx-2">
+                <Button variant="primary" onClick={encodeToBase64} className="mx-2 my-2">
                     Encode To base64
                 </Button>
-                <Button variant="primary" onClick={decodeToBase64} className="mx-2">
+                <Button variant="primary" onClick={decodeToBase64} className="mx-2 my-2 ">
                     Decode From base64
                 </Button>
-                <Button variant="primary" onClick={encodeTosha256} className="mx-2">
+                <Button variant="primary" onClick={encodeTosha256} className="mx-2 my-2">
                     Enocde To sha256
                 </Button>
             </Form.Group>
