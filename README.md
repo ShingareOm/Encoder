@@ -1,5 +1,8 @@
 # Encoder Using Reactjs
-
+![Output Screenshot 1](./output2.png)
+---
+![Output Screenshot 2](./output3.png)
+---
 A simple ReactJS project that allows users to encode and decode text using various encoding formats, including **Uppercase**, **Lowercase**, **SHA256**, and **Base64**. The application also demonstrates the use of React hooks (`useState`) and basic event handling.
 
 ## Features
